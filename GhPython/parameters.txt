@@ -1,0 +1,79 @@
+-----------------------------------------------------------------------
+Olfactory Primitive: Verical_10mm_Piezo
+--Material Parameters:
+Piezo = 10mm
+PTFE Tube Radius = 4mm
+PTFE Tube Wall Thickness = 1mm
+Cotton Radius = 2.5mm
+
+--Grasshopper Parameters:
+tube_radius = 4.0
+tube_inner_tolerance = 0.2
+tube_holder_height = 30 (customized by user, required tube_length = tube_holder_height+1)
+piezo_holder_cap_height = 6 (2.5mm piezo_height + 1.5mm*2)
+silicone_ring_thickness = 0.8
+tube_holder_tolerance = 0.2
+piezo_height = 2.5 (add a silicone pad to the bottom of the piezo with 0.4mm)
+piezo_radius = 5.2 (10mm piezo, 5mm radius, 0.2mm tolerance)
+piezo_holder_lock_height = 8.0 (3mm lock_height + 5mm)
+peizo_holder_thickness = 2.0
+lock_thickness = 2.0
+lock_height = 3.0
+lock_scale_factor = 1.05
+constraint_fix_tolerance = 0.5
+constraint_wall_thickness = 1.5
+
+Olfactory Primitive: Verical_16mm_Piezo
+--Material Parameters:
+Piezo = 16mm
+PTFE Tube Radius = 6mm
+PTFE Tube Wall Thickness = 1mm
+Cotton Radius = 4mm
+
+--Grasshopper Parameters that Need to be Adjusted:
+tube_radius = 6.0
+piezo_radius = 8.2 (16mm piezo, 8mm radius, 0.2mm tolerance)
+
+-----------------------------------------------------------------------
+
+Olfactory Primitive: Horizontal_10mm_Piezo
+--Material Parameters:
+Piezo = 10mm
+PTFE Tube Radius = 2mm
+Cotton Diameter 1 = 2mm
+Cotton Diameter 2 = 8mm
+
+--Grasshopper Parameters:
+tube_radius = 4.0
+tube_inner_tolerance = 0.2
+tube_holder_height = (OD_PCB_integration == False:15, OD_PCB_integration == True:17)
+piezo_holder_cap_height = 6 (2mm piezo_height + 1.5mm*2)
+silicone_ring_thickness = 0.8
+tube_holder_tolerance = 0.2
+piezo_height = 2.5 (add a silicone pad to the bottom of the piezo with 0.4mm)
+piezo_radius = 5.2 (10mm piezo, 5mm radius, 0.2mm tolerance)
+additonal_seal_thickness = 1.5
+piezo_holder_lock_height = 8.0 (3mm lock_height + 5mm)
+peizo_holder_thickness = 2.0
+lock_thickness = 2.0
+lock_height = 3.0 
+lock_scale_factor = 1.05
+horizontal_tube_radius = 2.0
+tube_fix_tolerance = 0.1
+extended_tube_holder_length = 10
+tube_holder_number = 1~8
+
+Olfactory Primitive: Horizontal_16mm_Piezo
+--Material Parameters:
+Piezo = 16mm
+PTFE Tube Radius = 3mm
+Cotton Diameter 1 = 3mm
+Cotton Diameter 2 = 12mm
+
+--Grasshopper Parameters that Need to be Adjusted:
+tube_radius = 6.0
+tube_holder_height = (OD_PCB_integration == False:17, OD_PCB_integration == True:19)
+piezo_radius = 8.2 (16mm piezo, 8mm radius, 0.2mm tolerance)
+horizontal_tube_radius = 3.0
+
+-----------------------------------------------------------------------
